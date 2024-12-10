@@ -1,10 +1,11 @@
 import { PRODUCTS } from '@/app/types/types'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ProductCard = ({ data }: { data: PRODUCTS }) => {
     return (
-        <div className="font-bold flex flex-col gap-3">
+        <Link href={'/productdetail'}  className="font-bold flex flex-col gap-3">
             <div className="size-64 relative bg-[#f5f5f5]" >
                 <Image className="p-10 object-contain" src={data.image} alt="Controller-Image" fill />
 
@@ -37,7 +38,7 @@ const ProductCard = ({ data }: { data: PRODUCTS }) => {
                 <div className="rounded-full bg-yellow-200 border-2 border-black size-5"></div>
                 <div className="rounded-full bg-red-500 size-5"></div>
             </div>}
-        </div>
+        </Link>
     )
 }
 

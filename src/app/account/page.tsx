@@ -1,3 +1,4 @@
+import Button from "../components/Button"
 
 const Account = () => {
   return (
@@ -9,18 +10,18 @@ const Account = () => {
         </div>
 
         <div className="flex justify-between gap-20">
-          <div className="flex flex-col gap-6">
+          <div className="flex-col gap-6 hidden lg:flex text-sm text-nowrap">
             <div className="flex flex-col gap-3">
-              <div className="">Manage My Account</div>
+              <div className="font-bold">Manage My Account</div>
               <div className="ml-10 opacity-40">
-                <div>My Profile</div>
+                <div className="text-red-600">My Profile</div>
                 <div>Address Book</div>
                 <div>My Payment Options</div>
               </div>
             </div>
 
             <div className="flex flex-col gap-3">
-              <div className="">My Orders</div>
+              <div className="font-bold">My Orders</div>
               <div className="ml-10 opacity-40">
                 <div>My Returns</div>
                 <div>My Cancellations</div>
@@ -28,36 +29,60 @@ const Account = () => {
             </div>
 
             <div className="flex flex-col gap-3">
-              <div className="">My Wishlist</div>
+              <div className="font-bold">My Wishlist</div>
             </div>
           </div>
 
-          <div className="p-14 flex gap-6 flex-col border w-full">
+          <div className="sm:p-14 p-6 flex gap-6 flex-col w-full shadow-[0_0_9px_3px_#00000008]">
             <div className="text-red-500">Edit Your Profile</div>
 
-            <div className="w-full flex flex-col gap-6 md:w-1/2 w-full">
-              <div className="flex gap-6 text-xs justify-between w-full">
-                <div className="w-full">
-                  <div className="flex-col flex w-full">
+            <div className="flex flex-col gap-6 w-full">
+              <div className="flex sm:gap-12 gap-6 flex-col sm:flex-row text-xs justify-between w-full">
+                <div className="w-full flex flex-col gap-6">
+                  <div className="flex-col flex w-full gap-2">
                     <label htmlFor={'MD'}>First Name</label>
                     <input type="text" id={'MD'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'MD'} />
                   </div>
-                  <div className="flex-col flex w-full">
-                    <label htmlFor={'Rimal'}>Last Name</label>
-                    <input type="text" id={'Rimal'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'Rimal'} />
+                  <div className="flex-col flex w-full gap-2">
+                    <label htmlFor={'Email'}>Email</label>
+                    <input type="text" id={'Email'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'rimel1111@gmail.com'} />
                   </div>
                 </div>
 
-                <div className="w-full">
-                  <div className="flex-col flex w-full">
-                    <label htmlFor={'MD'}>First Name</label>
-                    <input type="text" id={'MD'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'MD'} />
+                <div className="w-full flex flex-col gap-6">
+                  <div className="flex-col flex w-full gap-2">
+                    <label htmlFor={'Rimel'}>Last Name</label>
+                    <input type="text" id={'Rimel'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'Rimel'} />
                   </div>
-                  <div className="flex-col flex w-full">
-                    <label htmlFor={'Rimal'}>Last Name</label>
-                    <input type="text" id={'Rimal'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'Rimal'} />
+                  <div className="flex-col flex w-full gap-2">
+                    <label htmlFor={'Address'}>Address</label>
+                    <input type="text" id={'Address'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'Kingston, 5236, United State'} />
                   </div>
                 </div>
+              </div>
+
+              <div className="flex gap-12 xl:gap-20 text-xs justify-between w-full">
+                <div className="w-full flex flex-col gap-6">
+                  <div className="flex-col flex w-full gap-2">
+
+                    <label htmlFor={'MD'}>Password Changes</label>
+                    <input type="text" id={'MD'} className="bg-[#f5f5f5] p-3 outline-none" placeholder={'Current Password'} />
+                  </div>
+
+                  <div className="flex-col flex w-full gap-2">
+                    <input type="text" className="bg-[#f5f5f5] p-3 outline-none" placeholder={'New Password'} />
+                  </div>
+
+                  <div className="flex-col flex w-full gap-2">
+                    <input type="text" className="bg-[#f5f5f5] p-3 outline-none" placeholder={'Confirm New Password'} />
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="flex self-end items-center gap-6">
+                Cancel
+                <Button mt={false} name="Save Changes" />
               </div>
             </div>
           </div>

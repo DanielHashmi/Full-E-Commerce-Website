@@ -24,11 +24,11 @@ const Footer = () => {
                     input={false}
                     title="Account"
                     links={[
-                        'My Account',
-                        'Login / Register',
+                        'Checkout',
                         'Cart',
                         'Wishlist',
                         "Shop",
+                        'Account',
                     ]} />
 
                 <div className="flex gap-20 flex-wrap">

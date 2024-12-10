@@ -8,14 +8,14 @@ const Navbar = () => {
     const currenPage = usePathname().replace('/', '');
     const [showDropDown, setShowDropDown] = useState(false);
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center sticky top-0 z-50 bg-white">
             <div className="flex justify-between px-6 xl:justify-between w-full xl:w-[80vw] items-center mt-12 pb-3 border-b">
                 <Link href={'/'} className="text-xl font-bold">Exclusive</Link>
 
                 <div className="hidden md:flex gap-6">
                     <Link href={'/'} className={`hover:underline underline-offset-4 cursor-pointer ${currenPage === '' && 'underline'}`}>Home</Link>
-                    <Link href={'/'} className={`hover:underline underline-offset-4 cursor-pointer ${currenPage === 'content' && 'underline'}`}>Content</Link>
-                    <Link href={'/'} className={`hover:underline underline-offset-4 cursor-pointer ${currenPage === 'about' && 'underline'}`}>About</Link>
+                    <Link href={'/contact'} className={`hover:underline underline-offset-4 cursor-pointer ${currenPage === 'contact' && 'underline'}`}>Contact</Link>
+                    <Link href={'/about'} className={`hover:underline underline-offset-4 cursor-pointer ${currenPage === 'about' && 'underline'}`}>About</Link>
                     <Link href={'/signup'} className={`hover:underline underline-offset-4 cursor-pointer ${(currenPage === 'signup' || currenPage === 'login') && 'underline'}`}>Sign Up</Link>
                 </div>
 

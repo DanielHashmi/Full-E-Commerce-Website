@@ -1,4 +1,3 @@
-import Footer from "./components/Footer/Footer";
 import Categories from "./components/Home/Categories";
 import ExploreProducts from "./components/Home/ExploreProducts";
 import Featured from "./components/Home/Featured";
