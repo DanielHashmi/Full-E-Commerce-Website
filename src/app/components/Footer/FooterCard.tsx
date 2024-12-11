@@ -12,7 +12,7 @@ const FooterCard = (data: { input: boolean; title: string; links: string[]; bold
                 <Link href={`/${link.toLowerCase()}`} key={key} className="opacity-90 hover:opacity-50 cursor-pointer">{link}</Link>
             ))}
 
-            {data.input && <div className="flex border-2 rounded-md w-[13rem] gap-3 p-3 items-center">
+            {data.input && <div className="flex border-2 rounded-md min-w-fit w-[13rem] gap-3 p-3 items-center">
                 <input className="bg-transparent text-xs" type="text" placeholder="Enter your email" />
                 <Image className="size-6" src='/send.png' alt="search-icon" width={100} height={100} />
             </div>}
