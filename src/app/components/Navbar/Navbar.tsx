@@ -19,7 +19,7 @@ const Navbar = () => {
                     <Link href={'/signup'} className={`hover:underline underline-offset-4 cursor-pointer ${(currenPage === 'signup' || currenPage === 'login') && 'underline'}`}>Sign Up</Link>
                 </div>
 
-                <div className="flex items-center gap-6 relative">
+                <div className="flex items-center gap-3 sm:gap-6 relative">
                     <div className="flex sm:bg-[#F5F5F5] gap-3 p-3 items-center">
                         <input className="bg-transparent text-xs hidden sm:block" type="text" placeholder="What are you looking for?" />
                         <Image className="size-4" src='/search.png' alt="search-icon" width={100} height={100} />
@@ -32,7 +32,7 @@ const Navbar = () => {
                     
                     <Image className="size-7 md:hidden" src='/menu.svg' alt="menu-icon" width={100} height={100} />
                     <Image onClick={() => setShowDropDown(!showDropDown)} className="size-6 cursor-pointer hover:border rounded-full border-gray-200" src='/user.png' alt="user-icon" width={100} height={100} />
-                    <div className={`bg-[#6a6a6a82] backdrop-blur-md text-white text-nowrap overflow-hidden  gap-6 flex flex-col smooth rounded-lg absolute right-0 top-12 z-50 ${showDropDown ? 'size-64 p-6' : 'size-0 p-0'}`}>
+                    <div className={`bg-[#6a6a6a82] backdrop-blur-md text-white text-nowrap overflow-hidden gap-6 flex flex-col smooth rounded-lg absolute right-0 top-12 z-50 ${showDropDown ? 'size-64 p-6' : 'size-0 p-0'}`}>
                         <div className="flex gap-2 hover:opacity-50 cursor-pointer">
                             <Image className="size-6" src='/user-icon.png' alt="user-icon" width={100} height={100} />
                             Manage My Account

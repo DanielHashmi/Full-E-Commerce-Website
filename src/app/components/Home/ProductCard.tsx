@@ -5,7 +5,7 @@ import React from 'react'
 
 const ProductCard = ({ data }: { data: PRODUCTS }) => {
     return (
-        <Link href={'/productdetail'}  className="font-bold flex flex-col gap-3">
+        <Link href={'/productdetail'} className="font-bold flex flex-col gap-3">
             <div className="size-64 relative bg-[#f5f5f5]" >
                 <Image className="p-10 object-contain" src={data.image} alt="Controller-Image" fill />
 
@@ -17,9 +17,9 @@ const ProductCard = ({ data }: { data: PRODUCTS }) => {
                 {data.discount && <div className={`absolute top-2 left-2 ${data.discount === 'New' ? 'bg-[#00ff66]' : 'bg-[#db4444]'} text-[#ffffffe2] text-xs  py-1 px-4 rounded-md`}>{data.discount}</div>}
 
                 <div className="absolute right-2 flex flex-col gap-2 top-2">
-                    {data.heart && <Image className="size-9 rounded-full bg-background p-2" src='/heart.png' alt="heart-icon" width={100} height={100} />}
-                    {!data.delete && <Image className="size-9 rounded-full bg-background p-2" src='/eye.png' alt="eye-icon" width={100} height={100} />}
-                    {data.delete && <Image className="size-9 rounded-full bg-background p-2" src='/delete.png' alt="delete-icon" width={100} height={100} />}
+                    {data.heart && <Image className="size-9 rounded-full bg-white p-2" src='/heart.png' alt="heart-icon" width={100} height={100} />}
+                    {!data.delete && <Image className="size-9 rounded-full bg-white p-2" src='/eye.png' alt="eye-icon" width={100} height={100} />}
+                    {data.delete && <Image className="size-9 rounded-full bg-white p-2" src='/delete.png' alt="delete-icon" width={100} height={100} />}
                 </div>
             </div>
 

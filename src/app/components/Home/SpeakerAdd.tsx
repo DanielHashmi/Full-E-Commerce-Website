@@ -3,7 +3,7 @@ import Image from "next/image"
 const SpeakerAdd = () => {
     return (
         <div className="flex justify-center py-20 px-6">
-            <div className="bg-black flex-col-reverse md:flex-row w-screen xl:w-[78vw] xl:h-[65vh] justify-between items-start md:items-center text-background flex p-10 sm:p-14">
+            <div className="bg-black flex-col-reverse md:flex-row w-screen xl:w-[78vw] xl:h-[65vh] justify-between items-start md:items-center text-white flex p-10 sm:p-14">
                 <div className="flex w-1/2 flex-col gap-6 items-start">
                     <div className="text-[#00ff66]">Categories</div>
                     <div className="xl:text-5xl sm:text-4xl text-3xl xl:w-full sm:w-80 w-52 font-bold">
@@ -29,7 +29,7 @@ const SpeakerAdd = () => {
                         </div>
                     </div>
 
-                    <button className="px-12 py-3 rounded-sm text-background bg-[#00ff66] text-nowrap">Buy Now!</button>
+                    <button className="px-12 py-3 rounded-sm text-white bg-[#00ff66] text-nowrap">Buy Now!</button>
 
                 </div>
 
